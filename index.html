@@ -18,10 +18,17 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #343a40;
+            background: linear-gradient(90deg, #007bff, #6c757d);
             color: #fff;
-            padding: 20px;
+            padding: 50px 20px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
         }
         footer {
             background-color: #343a40;
@@ -37,9 +44,23 @@
             margin-bottom: 30px;
             text-align: center;
             color: #333;
+            font-size: 2rem;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
         .contact-icons i {
             margin-right: 10px;
+        }
+        .bg-light {
+            background-color: #ffffff !important;
+        }
+        .bg-dark {
+            background-color: #343a40 !important;
         }
     </style>
 </head>
