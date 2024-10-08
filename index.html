@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Baijid Hossain, a Software Engineer with a Diploma in Computer Engineering.">
-    <title>Baijid Hossain - Portfolio</title>
+    <title>Baijid Hossain - Professional Portfolio</title>
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,12 +16,12 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
         }
         header {
             background: linear-gradient(90deg, #007bff, #6c757d);
             color: #fff;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         header h1 {
@@ -30,21 +31,19 @@
         header p {
             font-size: 1.2rem;
         }
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 30px;
-        }
-        section {
-            padding: 40px 0;
+        header img {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%; /* Makes the image circular */
+            margin-bottom: 20px; /* Space below the image */
         }
         .section-title {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             text-align: center;
             color: #333;
             font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .card {
             transition: transform 0.3s, box-shadow 0.3s;
@@ -53,27 +52,33 @@
             transform: translateY(-10px);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
-        .contact-icons i {
-            margin-right: 10px;
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
         }
-        .bg-light {
-            background-color: #ffffff !important;
-        }
-        .bg-dark {
-            background-color: #343a40 !important;
+        .gallery img {
+            margin: 5px;
+            border-radius: 5px;
+            max-height: 200px;
+            object-fit: cover; /* Ensures images maintain their aspect ratio */
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Baijid Hossain's Portfolio</h1>
+    <img src="baijidhossain.jpg" alt="Baijid Hossain's Personal Photo">
+    <h1>Baijid Hossain</h1>
     <p>Software Engineer | Diploma in Computer Engineering</p>
 </header>
 
 <section id="about" class="container">
     <h2 class="section-title">About Me</h2>
-    <p>Hi, I am Baijid Hossain, a Software Engineer with a diploma in Computer Engineering from Bogura Polytechnic Institute. I am passionate about technology, programming, and problem-solving. I have worked on various projects during my studies and career, including web development, networking, and software design.</p>
+    <p>Hello! I am Baijid Hossain, a passionate Software Engineer with a diploma in Computer Engineering from Bogura Polytechnic Institute. I specialize in developing dynamic web applications and enjoy tackling complex problems through innovative solutions. My experience spans across multiple programming languages and technologies, and I am continuously learning and growing in the tech field.</p>
 </section>
 
 <section id="skills" class="container">
@@ -117,7 +122,7 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h3 class="card-title">Web-based CMS</h3>
-                    <p>A content management system developed using Laravel and integrated with a responsive theme for managing website content dynamically.</p>
+                    <p>A content management system developed using Laravel, featuring a responsive design for managing website content dynamically.</p>
                 </div>
             </div>
         </div>
@@ -133,9 +138,33 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h3 class="card-title">Mobile App</h3>
-                    <p>Developed a simple mobile app for managing student attendance, using Android Studio and Java.</p>
+                    <p>Developed a simple mobile app for managing student attendance using Android Studio and Java.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="container">
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="row gallery">
+        <div class="col-md-4">
+            <img src="/imag/baijid1.jpg" alt="Gallery /imag/baijid 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="/imag/baijid2.jpg" alt="Gallery /imag/baijid 2" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="/imag/baijid3.jpg" alt="Gallery /imag/baijid 3" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="/imag/baijid4.jpg" alt="Gallery /imag/baijid 4" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="/imag/baijid5.jpg" alt="Gallery /imag/baijid 5" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+            <img src="/imag/baijid6.jpg" alt="Gallery /imag/baijid 6" class="img-fluid">
         </div>
     </div>
 </section>
@@ -176,17 +205,4 @@
 </section>
 
 <footer>
-    <p>&copy; <span id="currentYear"></span> Baijid Hossain. All rights reserved.</p>
-</footer>
-
-<!-- Bootstrap 5 JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-<!-- JavaScript to dynamically add the current year -->
-<script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+    <p>&copy; <span id="
