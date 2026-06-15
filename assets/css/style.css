@@ -25,6 +25,22 @@
   --shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
 }
 
+.tomato-theme {
+  --bg: #fff1ef;
+  --surface: #ffffff;
+  --surface-alt: #ffe8e0;
+  --text: #1d1211;
+  --muted: #7a342b;
+  --primary: #ff6347;
+  --accent: #ff7f50;
+  --border: rgba(255, 99, 71, 0.18);
+  --shadow: 0 24px 80px rgba(255, 99, 71, 0.15);
+}
+
+.tomato-theme {
+  background: radial-gradient(circle at top, rgba(255, 99, 71, 0.14), transparent 28%), linear-gradient(180deg, var(--bg) 0%, #fff1ef 100%);
+}
+
 * {
   box-sizing: border-box;
 }
