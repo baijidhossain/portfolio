@@ -1,241 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Baijid Hossain, a Software Engineer with a Diploma in Computer Engineering.">
-    <title>Baijid Hossain - Professional Portfolio</title>
-
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        header {
-            background: linear-gradient(90deg, #007bff, #6c757d);
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        header img {
-            width: 150px; /* Adjust size as needed */
-            height: auto;
-            border-radius: 50%; /* Makes the image circular */
-            margin-bottom: 20px; /* Space below the image */
-        }
-        .section-title {
-            margin-bottom: 40px;
-            text-align: center;
-            color: #333;
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .card {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
-        }
-        .gallery img {
-            margin: 5px;
-            border-radius: 5px;
-            max-height: 200px;
-            object-fit: cover; /* Ensures images maintain their aspect ratio */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Baijid Hossain showcasing skills, projects, experience, and contact information for a software engineer and web developer.">
+  <title>Baijid Hossain | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-<header>
-    <img src="img/baijidhossain.jpg" alt="Baijid Hossain's Personal Photo">
-    <h1>Baijid Hossain</h1>
-    <p>Software Engineer | Diploma in Computer Engineering</p>
-</header>
-
-<section id="about" class="container">
-    <h2 class="section-title">About Me</h2>
-    <p>Hello! I am Baijid Hossain, a passionate Software Engineer with a diploma in Computer Engineering from Bogura Polytechnic Institute. I specialize in developing dynamic web applications and enjoy tackling complex problems through innovative solutions. My experience spans across multiple programming languages and technologies, and I am continuously learning and growing in the tech field.</p>
-</section>
-
-<section id="skills" class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <h3>Programming Languages</h3>
-            <ul class="list-group">
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">Java</li>
-                <li class="list-group-item">C++</li>
-                <li class="list-group-item">PHP</li>
-                <li class="list-group-item">HTML/CSS/JavaScript</li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <h3>Tools & Technologies</h3>
-            <ul class="list-group">
-                <li class="list-group-item">MySQL</li>
-                <li class="list-group-item">Git/GitHub</li>
-                <li class="list-group-item">Linux</li>
-                <li class="list-group-item">Laravel</li>
-                <li class="list-group-item">WordPress</li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-            <h3>Networking</h3>
-            <ul class="list-group">
-                <li class="list-group-item">Routing & Switching</li>
-                <li class="list-group-item">Network Security</li>
-                <li class="list-group-item">VPN Setup</li>
-            </ul>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner reveal">
+      <a class="brand" href="#home">Baijid Hossain</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="pages/projects.html">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">Dark</button>
+        <a href="#contact" class="button button--secondary">Hire Me</a>
+      </div>
     </div>
-</section>
+  </header>
 
-<section id="projects" class="container">
-    <h2 class="section-title">Projects</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h3 class="card-title">Web-based CMS</h3>
-                    <p>A content management system developed using Laravel, featuring a responsive design for managing website content dynamically.</p>
-                </div>
+  <main>
+    <section class="hero reveal" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Software Engineer</span>
+          <h1>Building high-performance web experiences with clean, modern design.</h1>
+          <p>Hi, I’m Baijid. I specialize in responsive web development, backend systems, and polished digital products using HTML, CSS, JavaScript, PHP, Laravel, and MySQL.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="button button--primary">Hire Me</a>
+            <a href="#projects" class="button button--secondary">View Projects</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-card">
+              <span>Experience</span>
+              <strong>4+ Years</strong>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h3 class="card-title">Networking Setup</h3>
-                    <p>Designed and implemented a local area network for a small business, including VPN setup and security configurations.</p>
-                </div>
+            <div class="hero-card">
+              <span>Projects</span>
+              <strong>25+</strong>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h3 class="card-title">Mobile App</h3>
-                    <p>Developed a simple mobile app for managing student attendance using Android Studio and Java.</p>
-                </div>
+            <div class="hero-card">
+              <span>Clients</span>
+              <strong>15+</strong>
             </div>
+          </div>
         </div>
+
+        <div class="hero-media">
+          <div class="hero-image">
+            <img src="assets/images/profile.jpg" alt="Profile image of Baijid Hossain">
+          </div>
+          <span class="hero-badge">Software Engineer</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01.</span>
+          <div>
+            <h2>About Me</h2>
+            <p class="section-description">I build efficient and intuitive websites that blend frontend polish with backend stability. My work focuses on responsive interfaces, fast performance, and scalable code.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <p>I am a dedicated software engineer with strong expertise in web development. From landing pages to full-stack applications, I create products that look great, feel smooth, and are easy to maintain.</p>
+            <p>My preferred tools include HTML, CSS, JavaScript, PHP, Laravel, and MySQL. I enjoy problem solving, writing clean code, and helping clients transform ideas into working digital solutions.</p>
+
+            <div class="feature-list">
+              <div class="feature">
+                <span>?</span>
+                <div>
+                  <strong>User-centered design</strong>
+                  <p>Minimal, accessible interfaces built for real users.</p>
+                </div>
+              </div>
+              <div class="feature">
+                <span>?</span>
+                <div>
+                  <strong>Full-stack development</strong>
+                  <p>Frontend, backend, database, and deployment expertise.</p>
+                </div>
+              </div>
+              <div class="feature">
+                <span>?</span>
+                <div>
+                  <strong>Performance first</strong>
+                  <p>Optimized assets, fast loading, and smooth interactions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-sidebar">
+            <div class="metric-grid">
+              <div class="metric">
+                <strong>98%</strong>
+                <span>Client satisfaction</span>
+              </div>
+              <div class="metric">
+                <strong>120K</strong>
+                <span>Lines of code</span>
+              </div>
+              <div class="metric">
+                <strong>8</strong>
+                <span>Frameworks learned</span>
+              </div>
+            </div>
+
+            <a class="button button--primary" href="#contact">Download CV</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02.</span>
+          <div>
+            <h2>Skills Overview</h2>
+            <p class="section-description">A balanced skill set across frontend, backend, and tools to build complete digital experiences.</p>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <div class="skill">
+              <div class="skill-label"><span>HTML</span><span>95%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 95%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-label"><span>CSS</span><span>92%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 92%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-label"><span>JavaScript</span><span>88%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 88%;"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <div class="skill">
+              <div class="skill-label"><span>PHP</span><span>90%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 90%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-label"><span>Laravel</span><span>85%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 85%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-label"><span>MySQL</span><span>88%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 88%;"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="skill">
+              <div class="skill-label"><span>jQuery</span><span>84%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 84%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-label"><span>Git</span><span>90%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 90%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-label"><span>REST APIs</span><span>87%</span></div>
+              <div class="skill-bar"><span class="skill-bar__fill" style="width: 87%;"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-badge">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">jQuery</span>
+          <span class="tag">PHP</span>
+          <span class="tag">Laravel</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Git</span>
+          <span class="tag">API Integration</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03.</span>
+          <div>
+            <h2>Projects</h2>
+            <p class="section-description">Selected work demonstrating websites, applications, and systems built for performance and clarity.</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <h3>Modern Portfolio Website</h3>
+            <p>A responsive portfolio built to showcase skills, projects, and contact information with an elegant design system.</p>
+            <div class="project-tech">
+              <span class="tag tag--dark">HTML</span>
+              <span class="tag tag--dark">CSS</span>
+              <span class="tag tag--dark">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Business Landing Page</h3>
+            <p>A high-conversion landing page concept featuring clear messaging, strong visual hierarchy, and conversion-focused sections.</p>
+            <div class="project-tech">
+              <span class="tag tag--dark">HTML</span>
+              <span class="tag tag--dark">CSS</span>
+              <span class="tag tag--dark">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <h3>Laravel CRM Dashboard</h3>
+            <p>A backend dashboard prototype built with Laravel and MySQL for managing clients, tasks, and analytics.</p>
+            <div class="project-tech">
+              <span class="tag tag--dark">Laravel</span>
+              <span class="tag tag--dark">PHP</span>
+              <span class="tag tag--dark">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04.</span>
+          <div>
+            <h2>Experience</h2>
+            <p class="section-description">Professional milestones and roles shaping a strong full-stack development practice.</p>
+          </div>
+        </div>
+
+        <div class="experience-list">
+          <article class="timeline-item reveal">
+            <span>2024�Present</span>
+            <h3>Senior Web Developer</h3>
+            <p>Freelance / Remote</p>
+            <ul>
+              <li>Built responsive client websites and web applications with PHP, Laravel, HTML, CSS, and JavaScript.</li>
+              <li>Optimized performance, accessibility, and cross-browser compatibility for each project.</li>
+              <li>Delivered reusable front-end components and backend APIs for smooth deployments.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span>2022�2024</span>
+            <h3>Full-Stack Developer</h3>
+            <p>Agency / Remote</p>
+            <ul>
+              <li>Collaborated on web platforms, CMS integrations, and business automation tools.</li>
+              <li>Maintained MySQL databases, authored REST endpoints, and handled deployment workflows.</li>
+              <li>Mentored junior developers and improved code quality with consistent standards.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05.</span>
+          <div>
+            <h2>Services</h2>
+            <p class="section-description">Services offered for modern brands, startups, and businesses planning their next digital project.</p>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <h3>Web Development</h3>
+            <p>Custom websites and web applications built for performance, scalability, and conversions.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>API Integration</h3>
+            <p>REST API design, third-party integrations, and automated workflows for connected systems.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>CMS Development</h3>
+            <p>Laravel backend, dynamic content management, and editable admin sections for non-technical users.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">06.</span>
+          <div>
+            <h2>Testimonials</h2>
+            <p class="section-description">Feedback from clients and collaborators who enjoyed working together and saw real results.</p>
+          </div>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p>"Baijid delivered a polished website quickly with excellent communication and attention to detail. The final product exceeded expectations."</p>
+            <div class="testimonial-author">
+              <span class="avatar-sm">KM</span>
+              <div>
+                <strong>Kevin Morgan</strong>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>"The Laravel dashboard he built made our workflow much easier. The UI is clean, and the app is fast and reliable."</p>
+            <div class="testimonial-author">
+              <span class="avatar-sm">AL</span>
+              <div>
+                <strong>Aisha Lee</strong>
+                <span>Founder</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>"Great collaboration and strong technical skills. His solutions were easy to maintain and beautifully designed."</p>
+            <div class="testimonial-author">
+              <span class="avatar-sm">RJ</span>
+              <div>
+                <strong>Rohan Jain</strong>
+                <span>Startup CEO</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <h3>Get in Touch</h3>
+          <p>Have a project or idea you'd like to build? Send a message and let's connect.</p>
+          <div class="contact-list">
+            <p><strong>Email</strong><br><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><strong>Phone</strong><br><a href="tel:+880123456789">+880 1234 56789</a></p>
+            <p><strong>Location</strong><br>Dhaka, Bangladesh</p>
+          </div>
+          <div class="contact-list">
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" action="#" method="post">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Your email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button type="submit" class="button button--primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer reveal">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Baijid Hossain. All rights reserved.</p>
+      <ul class="footer-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-</section>
+  </footer>
 
-<section id="gallery" class="container">
-    <h2 class="section-title">Photo Gallery</h2>
-    <div class="row gallery">
-        <div class="col-md-4">
-            <img src="img/baijid1.jpg" alt="Gallery img/baijid 1" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="img/baijid2.jpg" alt="Gallery img/baijid 2" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="img/baijid3.jpg" alt="Gallery img/baijid 3" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="img/baijid4.jpg" alt="Gallery img/baijid 4" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="img/baijid5.jpg" alt="Gallery img/baijid 5" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="img/baijid6.jpg" alt="Gallery img/baijid 6" class="img-fluid">
-        </div>
-    </div>
-</section>
-
-<section id="education" class="container">
-    <h2 class="section-title">Education</h2>
-    <p><strong>Diploma in Computer Engineering</strong> - Bogura Polytechnic Institute, [Year of Graduation]</p>
-</section>
-
-<section id="contact" class="container">
-    <h2 class="section-title">Contact</h2>
-    <ul class="list-group">
-        <li class="list-group-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:bayejidhossain47@gmail.com">bayejidhossain47@gmail.com</a>
-        </li>
-        <li class="list-group-item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+8801775051601">01775051601</a>
-        </li>
-        <li class="list-group-item">
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/8801775051601" target="_blank">WhatsApp: 01775051601</a>
-        </li>
-        <li class="list-group-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/baijid-hossain/" target="_blank">Baijid Hossain on LinkedIn</a>
-        </li>
-        <li class="list-group-item">
-            <i class="fab fa-facebook"></i>
-            <a href="https://www.facebook.com/baijidhossain.info" target="_blank">Baijid Hossain on Facebook</a>
-        </li>
-        <li class="list-group-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/baijidhossain" target="_blank">Baijid Hossain on GitHub</a>
-        </li>
-    </ul>
-</section>
-
-<footer>
-    <p>&copy; <span id="currentYear"></span> Baijid Hossain. All rights reserved.</p>
-</footer>
-
-<!-- Bootstrap 5 JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-<!-- JavaScript to dynamically add the current year -->
-<script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-</script>
-
-
-
-    <script>
-  (function(d,t) {
-    var BASE_URL="https://app.chatwoot.com";
-    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=BASE_URL+"/packs/js/sdk.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g,s);
-    g.onload=function(){
-      window.chatwootSDK.run({
-        websiteToken: 'GMHCviyA9TPYHAsF1ysC4L1W',
-        baseUrl: BASE_URL
-      })
-    }
-  })(document,"script");
-</script>
-
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
